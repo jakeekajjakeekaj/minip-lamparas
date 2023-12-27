@@ -1,0 +1,1 @@
+mini proyecto creado usando onclick desde los inputs

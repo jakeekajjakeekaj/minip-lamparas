@@ -1,0 +1,83 @@
+body {
+    font-family: sans-serif;
+    background: #333;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lampara {
+    width: 27%;
+    border-bottom: 10px solid #ccc;
+    position: relative;
+}
+
+.cable {
+    width: 2px;
+    margin: auto;
+    background-color: #626262;
+    height: 200px;
+}
+
+.caja {
+    width: 80px;
+    height: 40px;
+    background-color: #626262;
+    margin: auto;
+    border-radius: 30px 30px 0 0;   /* Izquierda-superior Derecha-superior Derecha-inferior Izquierda-inferior */
+    /* position: relative; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.luz {
+    max-width: 300px;
+    margin: auto;
+    height: 240px;
+    clip-path: polygon(40% 0, 60% 0, 100% 100%, 0 100%);    /* LAS MEDIDAS SON TOMADAS EN PORCENTAJES DESDE LA BASE, ES DECIR QUE EL 0% EN EQUIS ES COMO LLENAR EN 0 DESDE LA BASE, Y EL 100% ES LLENAR LA CAPACIDAD MÁXIMA DE X, ASÍ COMO SE VE A CONTINUACIÓN */    /* top-left: eje x eje y, top-right: eje x eje y, bottom-right: eje x eje y, bottom-left: eje x eje y */
+    /* padding-top: 40px; */
+    /* background-color: #dd0; */
+}
+
+.l0 {
+    background: linear-gradient(rgba(242, 104, 42, 1), rgba(255, 255, 255, 0));    /* Los primeros 3 valores son el rgb, y el último indica la opacidad */
+}
+
+.l1 {
+    background: linear-gradient(rgba(48, 170, 219, 1), rgba(255, 255, 255, 0));
+}
+
+.l2 {
+    background: linear-gradient(rgba(242, 191, 38, 1), rgba(255, 255, 255, 0));
+}
+
+.texto {
+    position: absolute;
+    bottom: -7px;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.t0 {
+    text-shadow: 0 0 12px rgb(242, 104, 42);    /* eje x, eje y, bloom, color */
+}
+
+.t1 {
+    text-shadow: 0 0 12px rgb(48, 170, 219);
+}
+
+.t2 {
+    text-shadow: 0 0 12px rgb(242, 191, 38);
+}
+
+input {
+    accent-color: #0c0;
+    cursor: pointer;
+}
